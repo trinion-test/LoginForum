@@ -1,0 +1,14 @@
+FROM postgres:13-alpine
+
+ENV TZ Asia/Tokyo
+ENV POSTGRES_USER lfuser
+ENV POSTGRES_PASSWORD lfdbPass12ab
+ENV POSTGRES_DB lfdb
+
+EXPOSE 5432
+
+# docker build -t lfdb:v1 .
+# docker run -itd -p 5432:5432 --name lfdb lfdb:v1
+# docker exec -it lfdb bash
+# psql -d lfdb -h localhost -p 5432 -U lfuser
+# lfdbPass12ab
